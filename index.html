@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Simon Kim's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <img src="Yonsei_banner.png">
+            <div>
+                <h1>Simon Kim's Portfolio</h1>
+                <p>Electrical and Electronic Engineering</p>
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="button-container">
+                <button class="glow-button" id="aboutBtn">About</button>
+                <button class="glow-button" id="frontendBtn">Frontend</button>
+                <button class="glow-button">Backend</button>
+                <button class="glow-button">Socket</button>
+                <button class="glow-button">Web Crawling</button>
+                <button class="glow-button">HTML</button>
+                <button class="glow-button">AI</button>
+                <button class="glow-button">Unity</button>
+            </div>
+            <div class="page-content" id="pageContent">
+                <iframe src="About.html" frameborder="0" style="width:100%; height:100%;"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function loadContent(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('pageContent').innerHTML = data;
+                })
+                .catch(error => console.error('404', error));
+        }
+        
+        loadContent('About.html');
+
+        document.getElementById('aboutBtn').addEventListener('click', function() {
+            loadContent('About.html');
+        });
+
+        document.getElementById('frontendBtn').addEventListener('click', function() {
+            loadContent('Frontend.html');
+        });
+
+    });
+</script>
