@@ -1,0 +1,17 @@
+.image_container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#selfie{
+    width: 400px;
+}
+
+.about_text{
+    text-align: center;
+    line-height: 0.5;
+}

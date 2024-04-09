@@ -1,0 +1,18 @@
+.CDN{
+    line-height: 1;
+}
+
+#cdn_text{
+    text-decoration: underline;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.cdn_body{
+    font-size: 24px;
+}
+
+.cdn_images img{
+    width: 900px;
+    height: auto;
+}

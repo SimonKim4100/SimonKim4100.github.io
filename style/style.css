@@ -6,6 +6,15 @@ body, html {
     height: 100%;
 }
 
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
 .banner {
     display: flex;
     background-color: #ffffff;
@@ -14,6 +23,8 @@ body, html {
     text-align: left;
     padding: 20px;
     font-size: 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .banner img {
@@ -28,7 +39,10 @@ body, html {
 }
 
 .button-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20px;
     margin-top: 10px;
 }
 
@@ -59,12 +73,15 @@ body, html {
 }
 
 .content-area {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    padding: 0px;
 }
 
 .page-content {
-    flex-grow: 3;
+    flex-grow: 1;
     min-height: 500px;
     padding: 20px;
+    box-sizing: border-box;
 }
