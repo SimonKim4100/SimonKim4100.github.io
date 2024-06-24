@@ -1,0 +1,31 @@
+p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.HTML{
+    line-height: 1;
+}
+
+#static_text{
+    text-decoration: underline;
+    margin-top: 2px;
+}
+
+.static_container{
+    font-size: 24px;
+}
+
+.static_container h2{
+    font-size: 30px;
+}
