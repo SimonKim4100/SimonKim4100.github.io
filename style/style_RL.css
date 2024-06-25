@@ -3,20 +3,23 @@ p {
     margin-bottom: 2px;
 }
 
-.CDN{
+.RL{
     line-height: 1.2;
 }
 
-#cdn_text{
+#RL_text{
     text-decoration: underline;
     margin-top: 2px;
 }
 
-.cdn_body{
+.RL_body{
     font-size: 24px;
 }
 
-.cdn_images img{
-    width: 900px;
-    height: auto;
+.RL_images{
+    text-align: center;
+}
+
+#gridworld {
+    width: 70%;
 }
