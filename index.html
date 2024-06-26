@@ -18,15 +18,15 @@
             <div class="content-area">
                 <div class="button-container">
                     <button class="glow-button" id="aboutBtn">About</button>
-                    <button class="glow-button" id="frontendBtn">Frontend</button>
-                    <button class="glow-button" id="backendBtn">Backend</button>
+                    <!-- <button class="glow-button" id="frontendBtn">Frontend</button>
+                    <button class="glow-button" id="backendBtn">Backend</button> -->
                     <button class="glow-button" id="socketBtn">Socket</button>
                     <button class="glow-button" id="wcBtn">Web Crawling</button>
                     <button class="glow-button" id="htmlBtn">HTML</button>
                     <button class="glow-button" id="RLBtn">Reinforced L</button>
                     <button class="glow-button" id="DLBtn">Deep L</button>
                     <button class="glow-button" id="unityBtn">Unity</button>
-                    <button class="glow-button" id="impBtn">Implement</button>
+                    <button class="glow-button" id="API">API</button>
                 </div>
                 <div class="page-content" id="pageContent">
                     <iframe src="About.html" frameborder="0" style="width:100%; height:100%;"></iframe>
@@ -52,12 +52,12 @@
         document.getElementById('aboutBtn').addEventListener('click', function() {
             loadContent('About.html');
         });
-        document.getElementById('frontendBtn').addEventListener('click', function() {
-            loadContent('Frontend.html');
-        });
-        document.getElementById('backendBtn').addEventListener('click', function() {
-            loadContent('Backend.html');
-        });
+        // document.getElementById('frontendBtn').addEventListener('click', function() {
+        //     loadContent('Frontend.html');
+        // });
+        // document.getElementById('backendBtn').addEventListener('click', function() {
+        //     loadContent('Backend.html');
+        // });
         document.getElementById('socketBtn').addEventListener('click', function() {
             loadContent('Socket.html');
         });
@@ -76,9 +76,8 @@
         document.getElementById('unityBtn').addEventListener('click', function() {
             loadContent('Unity.html');
         });
-        document.getElementById('impBtn').addEventListener('click', function() {
-            loadContent('Implement.html');
+        document.getElementById('API').addEventListener('click', function() {
+            loadContent('API.html');
         });
-
     });
 </script>

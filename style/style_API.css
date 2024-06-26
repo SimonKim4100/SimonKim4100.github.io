@@ -3,20 +3,24 @@ p {
     margin-bottom: 2px;
 }
 
-.CDN{
+.API{
     line-height: 1.2;
 }
 
-#cdn_text{
+#API_text{
     text-decoration: underline;
     margin-top: 2px;
 }
 
-.cdn_body{
+.API_body{
     font-size: 24px;
 }
 
-.cdn_images img{
-    width: 95%;
+.API_images{
+    text-align: center;
+}
+
+#showcase{
+    width: 100%;
     height: auto;
 }
