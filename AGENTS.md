@@ -1,5 +1,7 @@
 # Agent Guidelines for al-folio (v1.x)
 
+> **This repository is a personal site made from the al-folio starter, not the starter itself.** It is Semin Kim's GitHub Pages user site (https://simonkim4100.github.io/). `baseurl` is empty: build and serve at the root (`bundle exec jekyll serve` → http://localhost:4000/). Wherever this file says `/al-folio`, read `/`. The tests in `test/` check the upstream demo content and are not expected to pass here.
+
 **This file is the authoritative entry point for coding agents working in this repo.** Read it before making any change. It is intentionally short and tool-neutral; it links to the one place each longer-form fact lives.
 
 `al-folio` v1.x is a **thin Jekyll starter, not a theme**. This repo owns starter wiring, example content, docs, and cross-plugin tests. All runtime — layouts, includes, Sass, Liquid tags, filters, feature JS — lives in versioned gems published under [`al-org-dev`](https://github.com/al-org-dev).

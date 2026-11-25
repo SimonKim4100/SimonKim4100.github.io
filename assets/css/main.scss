@@ -1,0 +1,62 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}},
+  // Site colors, a greenish turquoise (hue 174) instead of the default purple / cyan: light-theme accent for links,
+  // buttons and badges (4.6:1 on white) and dark-theme accent. Local copy of al_folio_core's assets/css/main.scss.
+  $purple-color: #0a8478,
+  $cyan-color: #22a597
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// About page: links and email right under the bio, with smaller icons
+// (the template's own block sits at the bottom of the page with 4rem icons).
+.social.bio-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  text-align: left;
+  margin-top: 0.75rem;
+
+  .contact-icons {
+    font-size: 1.5rem;
+    line-height: 1;
+
+    a + a {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .contact-note {
+    font-size: 0.9rem;
+  }
+}

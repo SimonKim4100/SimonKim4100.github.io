@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+> Personal site: see the note at the top of `AGENTS.md`. `baseurl` is empty here, so ignore the `/al-folio` paths below and serve at http://localhost:4000/.
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 @AGENTS.md

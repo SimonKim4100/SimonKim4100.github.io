@@ -1,9 +1,6 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Optional styling for the `abbr` badge of a publication (_layouts/bib.liquid in al_folio_core),
+# keyed by the exact abbr value in _bibliography/papers.bib. Without an entry the badge
+# is drawn in the theme color with no link. Example:
+# "arXiv":
+#   url: https://arxiv.org/
+#   color: "#RRGGBB"
